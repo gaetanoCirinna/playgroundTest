@@ -1,0 +1,57 @@
+.cards-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #ebebeb;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  &.flex-element {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  &__image {
+    width: 100%;
+    max-height: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  &__text {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 1.5rem;
+    @media (min-width: $atMedium) {
+      padding: 2rem;
+    }
+  }
+  &__btn {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 0.875rem;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

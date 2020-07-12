@@ -1,0 +1,114 @@
+.footer-container {
+  width: 100%;
+  float: left;
+  background-color: #000;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__contact {
+    h1 {
+      color: #fff;
+      font-size: 4.375rem;
+      margin: 0;
+      line-height: 1;
+      font-family: "Ghotam-Bold", sans-serif;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        font-family: "Gotham-Book", sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__form {
+    color: #fff;
+    padding-top: 2rem;
+    input {
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0 auto;
+      padding: 10px 10px;
+      border-radius: 0.2rem;
+      background-color: transparent;
+      border: 1px solid #fff;
+      display: block;
+      transition: all 0.3s;
+      &:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+      }
+    }
+    label {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      margin-left: 2rem;
+      margin-top: 0.7rem;
+      display: block;
+      transition: all 0.3s;
+
+      transform: translateY(-5rem);
+    }
+
+    textarea {
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0 auto;
+      padding: 10px 10px;
+      border-radius: 0.2rem;
+      background-color: transparent;
+      border: 1px solid #fff;
+      display: block;
+      transition: all 0.3s;
+    }
+    button {
+      background-color: #fff;
+      font-family: "Gotham-Book", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding: 10px 40px;
+      margin-top: 30px;
+      width: 100%;
+      border: none;
+    }
+  }
+
+  &__social {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    img {
+      margin: 0 auto;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 80px;
+      text-align: center;
+
+      li {
+        display: inline;
+        margin-right: 3rem;
+        &:last-child {
+          margin-right: 0px;
+        }
+        a {
+          text-decoration: none;
+          color: #777777;
+          font-family: "Gotham-Book", sans-serif;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

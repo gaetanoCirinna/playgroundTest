@@ -1,0 +1,53 @@
+.tabs-container {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  float: left;
+  background-color: #ebebeb;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      background-color: #ccc;
+      border-bottom: 1px solid #fff;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 0.875rem;
+      font-family: "Gotham-Bold", sans-serif;
+      transition: all 0.2s ease-out;
+      &:last-child {
+        border-bottom: none;
+      }
+      &.active {
+        background-color: #000;
+        color: #fff;
+      }
+      &.active::after {
+        font-family: "FontAwesome";
+        color: #fff;
+        position: relative;
+        font-size: 2rem;
+        content: "\f107";
+      }
+    }
+  }
+  &__text-content {
+    background-color: #fff;
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 50px;
+    padding-bottom: 130px;
+
+    p {
+      margin: 0;
+      font-family: "Gotham-Book", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+  }
+}
