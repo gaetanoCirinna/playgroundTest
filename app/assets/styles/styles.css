@@ -517,10 +517,14 @@ img {
         content: "\f107"; }
   .tabs-container__text-content {
     background-color: #fff;
-    padding-left: 98px;
-    padding-right: 98px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-top: 50px;
     padding-bottom: 130px; }
+    @media (min-width: 768px) {
+      .tabs-container__text-content {
+        padding-left: 98px;
+        padding-right: 98px; } }
     .tabs-container__text-content p {
       margin: 0;
       font-family: "Gotham-Book", sans-serif;

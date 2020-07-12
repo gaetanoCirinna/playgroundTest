@@ -38,10 +38,14 @@
   }
   &__text-content {
     background-color: #fff;
-    padding-left: 98px;
-    padding-right: 98px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-top: 50px;
     padding-bottom: 130px;
+    @media (min-width: $atMedium) {
+      padding-left: 98px;
+      padding-right: 98px;
+    }
 
     p {
       margin: 0;
