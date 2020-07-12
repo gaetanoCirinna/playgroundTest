@@ -7,10 +7,18 @@ const sourcemaps = require("gulp-sourcemaps");
 const babel = require("gulp-babel");
 const concat = require("gulp-concat");
 
+const autoprefixer = require("gulp-autoprefixer");
+
 gulp.task("sass", () => {
   return gulp
     .src("app/styles/styles.scss")
     .pipe(sass())
+    .pipe(
+      autoprefixer({
+        browsers: ["last 12 versions"],
+        cascade: false,
+      })
+    )
     .pipe(gulp.dest("./dist"))
     .pipe(gulp.dest("./app/assets/styles"))
 
