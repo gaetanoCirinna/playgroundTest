@@ -8,7 +8,6 @@ const fetchJSONFile = (path, callback) => {
       if (httpRequest.status === 200) {
         const data = JSON.parse(httpRequest.responseText);
         if (callback) {
-          console.log(data);
           callback(data);
         }
       }
@@ -19,9 +18,7 @@ const fetchJSONFile = (path, callback) => {
 };
 
 const showTitleTab = () => {
-  console.log("entra");
   for (let i = 0; i < titleTabs.length; i++) {
-    console.log("entra anche qui");
     fetchJSONFile("/../../assets/ajax/tab" + (i + 1) + ".json", (data) => {
       if (data) {
         var title = document.getElementById("tab-title" + (i + 1));

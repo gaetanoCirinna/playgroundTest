@@ -24,7 +24,6 @@ var fetchJSONFile = function fetchJSONFile(path, callback) {
         var data = JSON.parse(httpRequest.responseText);
 
         if (callback) {
-          console.log(data);
           callback(data);
         }
       }
@@ -36,10 +35,7 @@ var fetchJSONFile = function fetchJSONFile(path, callback) {
 };
 
 var showTitleTab = function showTitleTab() {
-  console.log("entra");
-
   var _loop = function _loop(i) {
-    console.log("entra anche qui");
     fetchJSONFile("/../../assets/ajax/tab" + (i + 1) + ".json", function (data) {
       if (data) {
         var title = document.getElementById("tab-title" + (i + 1));
@@ -95,10 +91,6 @@ var navbar = document.getElementById("navbar");
 var navbarPosition = navbar.offsetTop;
 
 window.onscroll = function (e) {
-  console.log(navbarPosition);
-  console.log(window.pageYOffset);
-  console.log(window.pageYOffset === 0 ? "ciao" : "merda");
-
   if (window.pageYOffset >= navbarPosition) {
     navbar.classList.add("sticky");
   }
